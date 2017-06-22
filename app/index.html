@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="jsonPrettyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JSON Pretty Printer by JewsOfHazard</title>
+    <script src="assets/bower_components/angular/angular.min.js"></script>
+    <script src="assets/bower_components/ng-prettyjson/dist/ng-prettyjson.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/ng-prettyjson/dist/ng-prettyjson.min.css">
+    <script src="js/app.js"></script>
+</head>
+
+<body ng-controller="jsonPrettyController">
+    <input ng-model="ui.jsonUrl"> <button ng-click="prettyPrint()">Click Me!</button>
+    <br>
+    <pre pretty-json="ui.jsonObject"></pre>
+</body>
+
+</html>
